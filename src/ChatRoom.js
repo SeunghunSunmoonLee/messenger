@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import Users from './Users';
+import ChatList from './ChatList';
 import Chat from './Chat';
 import Input from './Input';
 import {Row, Col} from 'antd'
@@ -16,7 +16,7 @@ class ChatRoom extends Component {
         <h1 style={{textAlign: 'center'}}>Messenger</h1>
         <Row>
           <Col span={4}>
-            <Users />
+            <ChatList />
           </Col>
           <Col span={20}>
             <Row style={{height: '90vh'}}>

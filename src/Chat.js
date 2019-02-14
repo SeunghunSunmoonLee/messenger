@@ -10,7 +10,7 @@ class Chat extends Component {
 
     const messagesList = !messages ? <Fragment></Fragment> : messages.map(message => {
       return (
-        <Fragment>
+        <Fragment key={message.id}>
           <Row>
             <Col>
               {message.user.name} {message.time}
